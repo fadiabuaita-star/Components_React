@@ -1,3 +1,5 @@
 import ReactDom from 'react-dom';
+import React from 'react';
+import { EditUser } from './components/ui/EditUser';
 
-ReactDom.render('Hi',document.getElementById('root'));
+ReactDom.render(<EditUser />,document.getElementById('root'));
