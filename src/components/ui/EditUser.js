@@ -1,6 +1,8 @@
 import React from 'react';
 import { LabeledInput } from './LabeledInput';
 import * as Val from '../../helpers/Validators';
+import { GenderSelector } from './GenderSelector';
+import { NumberSelector } from '../NumberSelector';
 //
 export class EditUser extends React.Component{
 
@@ -11,7 +13,7 @@ export class EditUser extends React.Component{
             console.log({t:e.target,ct:e.currentTarget,k: e.key,kc:e.keyCode,tp:e.type});
         }
     }
-
+    //
     render(){
         return (
             <section >
@@ -22,6 +24,10 @@ export class EditUser extends React.Component{
 
                 <div>
                     <LabeledInput labelText="Password:" placeholder="enter password" type="password" />
+                </div>
+                
+                <div>
+                    <NumberSelector LabelText="Age:" InitialNumber={19} MinNumber={18} MaxNumber={120}/>
                 </div>
 
                 <label>phone number:</label><input type="text" onKeyDown={this.AllowOnlyNumericKeys} />
