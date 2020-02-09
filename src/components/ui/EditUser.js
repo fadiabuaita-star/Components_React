@@ -2,7 +2,7 @@ import React from 'react';
 import { LabeledInput } from './LabeledInput';
 import * as Val from '../../helpers/Validators';
 import { GenderSelector } from './GenderSelector';
-import { NumberSelector } from '../NumberSelector';
+import { NumberSelector } from './NumberSelector';
 //
 export class EditUser extends React.Component{
 
